@@ -1,5 +1,5 @@
 module Cuba
-  module Libre
+  class Libre
     VERSION = "0.0.1"
   end
 end

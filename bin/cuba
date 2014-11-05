@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 require "cuba/libre"
 
 if ARGV.length == 2 && ARGV[0] == 'new'
