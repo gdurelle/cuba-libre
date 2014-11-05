@@ -12,13 +12,13 @@ module Cuba
     end
 
     def create_config_file
-      File.open("./#{@project_dir}/config.ru", 'w+') do |file|
+      File.open("./#{@project_name}/config.ru", 'w+') do |file|
         file.write setup_config
       end
     end
 
     def create_cuba_file
-      File.open("./#{@project_dir}/#{ARGV[1]}.rb", 'w+') do |file|
+      File.open("./#{@project_name}/#{ARGV[1]}.rb", 'w+') do |file|
         file.write setup_cuba
       end
     end
