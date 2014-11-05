@@ -4,7 +4,7 @@ require 'securerandom'
 module Cuba
   class Libre
     def initialize(name)
-      @project_name = name
+      @project_name = name.downcase
     end
 
     def create_dir
@@ -18,7 +18,7 @@ module Cuba
     end
 
     def create_cuba_file
-      File.open("./#{@project_name}/#{ARGV[1]}.rb", 'w+') do |file|
+      File.open("./#{@project_name}/#{@project_name}.rb", 'w+') do |file|
         file.write setup_cuba
       end
     end
@@ -52,14 +52,14 @@ Cuba.use Rack::Session::Cookie, :secret => "#{SecureRandom.base64(128)}"
 # To launch just type: 'rackup' in your console
 Cuba.define do
   on get do
-    on "#{ARGV[1]}" do
+    on "#{@project_name}" do
       on root do
         res.write 'Hello world!'
       end
     end
 
     on root do
-      res.redirect "/#{ARGV[1]}"
+      res.redirect "/#{@project_name}"
     end
   end
 end
@@ -68,7 +68,7 @@ EOF
 
     def setup_config
 <<-EOF
-require "./#{ARGV[1]}"
+require "./#{@project_name}"
 
 run Cuba
 EOF
