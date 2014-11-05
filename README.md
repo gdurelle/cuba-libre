@@ -1,7 +1,8 @@
 # Cuba::Libre
 
 Cuba-libre is now a cocktail AND a generator to help creating Cuba projects.
-Cuba is a micro-framework for Ruby based on Rack.
+
+[Cuba](https://github.com/soveran/cuba) is a micro-framework for Ruby based on Rack.
 
 ## Installation
 
@@ -24,6 +25,7 @@ Or install it yourself as:
     $ cuba new [projectName]
 
 This will create your cuba project with its 2 files:
+
 * The config.ru to ```rackup```your project.
 * The projectname.rb file that contains your project config and routes.
 
