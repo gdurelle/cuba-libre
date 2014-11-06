@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/gdurelle/cuba-libre.svg?branch=master)](https://travis-ci.org/gdurelle/cuba-ibre)
+
+
 # Cuba::Libre
 
 Cuba-libre is now a cocktail AND a generator to help creating Cuba projects.
