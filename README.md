@@ -9,18 +9,6 @@ Cuba-libre is now a cocktail AND a generator to help creating Cuba projects.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'cuba-libre'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install cuba-libre
 
 ## Usage
@@ -32,6 +20,12 @@ This will create your cuba project with its 2 files:
 * The config.ru to ```rackup```your project.
 * The projectname.rb file that contains your project config and routes.
 
+## Todo
+
+Next evolutions of the gem will be :
+
+* Refactor using [Thor](https://github.com/erikhuda/thor) gem.
+* Add options and arguments to command line (see [Issue #1](https://github.com/gdurelle/cuba-libre/issues/1))
 
 ## Contributing
 
